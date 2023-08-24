@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <style>
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .half {
+                width: 49%;
+                /* Adjust as needed */
+                border: 1px solid #000;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="half p-3">
+                The Head(first 5) values of total dataset extracted is :
+                {{df_friend|safe}}
+                <hr><br><br>
+                The description of dataset is:
+                {{df_friend_shape|safe}}
+            </div>
+            <div class="half">
+                <!-- Content for the second div goes here -->
+                <img src="data:image/png;base64,{{graph_1|safe}}" alt="">
+            </div>
+        </div><br><br><br><br><br>
+
+        <hr><br><br><br><br>
+        <div>
+            {{df_feature|safe}}
+        </div>
+        <br><br><br><br><br>
+
+        <hr><br><br><br><br>
+        <div>
+
+            The description after applying feature engineering is :
+            {{df_feature_shape|safe}}
+        </div>
+        <br><br><br><br><br>
+
+        <hr><br><br><br><br>
+        <div>
+
+            The description after applying count vectorizer is :
+            {{df_count_shape|safe}}
+        </div>
+        <br><br><br><br><br>
+
+        <hr><br><br><br><br>
+
+        <div>
+
+            The description after applying tdidf vectorizer is :
+            {{df_tdidf_shape|safe}}
+        </div>
+
+
+
+    </body>
+
+</html>

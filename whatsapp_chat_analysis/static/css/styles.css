@@ -1,0 +1,200 @@
+/* 2015, copyright © CrazyWebtag.com - Rayan Mohammad */
+
+body {
+    text-align: center;
+  }
+  
+  .main-container {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  
+  .item-container * {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .item-container {
+    display: inline-block;
+    overflow: hidden;
+    width: 228px;
+    margin: 0 0 22px 22px;
+    border: 1px solid #cccccc;
+    float: right;
+    background: #fff;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+  
+  .item-container:hover {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3)
+  }
+  
+  .item-container figure {
+    display: block;
+    overflow: hidden;
+    width: 228px;
+    height: 158px;
+    margin: 0;
+  }
+  
+  .item-container figure a {
+    display: block;
+    overflow: hidden;
+    width: 228px;
+    height: 158px;
+    -webkit-animation: banner-image-animation-out .3s ease 1 alternate forwards;
+    animation: banner-image-animation-out .3s 1 ease alternate forwards;
+  }
+  
+  .item-container figure:hover a {
+    -webkit-animation: banner-image-animation-in .3s ease 1 alternate forwards;
+    animation: banner-image-animation-in .3s 1 ease alternate forwards;
+  }
+  
+  .item-container figcaption {
+    display: block;
+    overflow: hidden;
+  }
+  
+  .item-container figcaption > a {
+    display: block;
+    overflow: hidden;
+    width: 228px;
+    margin: 0 auto 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    color: #434343;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  .item-container figcaption > a:hover {
+    color: Green
+  }
+  
+  .item-container figcaption > p {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    font-size: 12px;
+    font-weight: 400;
+    color: #434343;
+    text-align: justify;
+    line-height: 16px;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    padding: 0 10px 10px;
+  }
+  
+  @-webkit-keyframes banner-image-animation-in {
+    0% {
+      -moz-transform: scale(1.0, 1.0);
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -moz-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+  }
+  
+  @-moz-keyframes banner-image-animation-in {
+    0% {
+      -moz-transform: scale(1.0, 1.0);
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -moz-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+  }
+  
+  @-o-keyframes banner-image-animation-in {
+    0% {
+      -moz-transform: scale(1.0, 1.0);
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -moz-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+  }
+  
+  @keyframes banner-image-animation-in {
+    0% {
+      -moz-transform: scale(1.0, 1.0);
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -moz-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+  }
+  
+  @-webkit-keyframes banner-image-animation-out {
+    0% {
+      -moz-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      -moz-transform: scale(1.0, 1.0);
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+  }
+  
+  @-moz-keyframes banner-image-animation-out {
+    0% {
+      -moz-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      -moz-transform: scale(1.0, 1.0);
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+  }
+  
+  @-o-keyframes banner-image-animation-out {
+    0% {
+      -moz-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      -moz-transform: scale(1.0, 1.0);
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+  }
+  
+  @keyframes banner-image-animation-out {
+    0% {
+      -moz-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      -moz-transform: scale(1.0, 1.0);
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+  }
